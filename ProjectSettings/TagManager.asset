@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Duck2
+    uniqueID: 1697291875
+    locked: 0
