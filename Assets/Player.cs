@@ -16,11 +16,16 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+<<<<<<< HEAD
        /* Vector3 newPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Mathf.Abs(Camera.main.transform.position.z - transform.position.z)));
         newPos.z = transform.position.z;
         transform.position = newPos;
         */
     }
+=======
+        onShoot();
+	}
+>>>>>>> f5db390d258bf33ac12823dcf3218a0a67fbc508
 
     //on awake
 

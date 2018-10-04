@@ -3,8 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Duck
+=======
+  tags: []
+>>>>>>> f5db390d258bf33ac12823dcf3218a0a67fbc508
   layers:
   - Default
   - TransparentFX
@@ -42,3 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
+=======
+  - name: Duck2
+    uniqueID: 1697291875
+    locked: 0
+>>>>>>> f5db390d258bf33ac12823dcf3218a0a67fbc508
