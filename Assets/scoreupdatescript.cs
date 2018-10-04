@@ -3,19 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class scoreupdatescript : MonoBehaviour {
+public class scoreupdatescript : Duck_Movement
+{
+    Text instruction;
+    public static int score = 0;
+    public string stringToEdit = "Hello World";
 
-	Text instruction;
-	private int score = 0;
+    // Use this for initialization
+    void Start()
+    {
+        instruction = GetComponent<Text>();
+        instruction.text = "Score: 0";
+    }
 
-	// Use this for initialization
-	void Start () {
-		instruction = GetComponent<Text> ();
-		instruction.text = "Score: 0";
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        if (hit == true)
+        {
+            score = score + 1;
 
-	// Update is called once per frame
-	void Update () {
-		instruction.text = "Score: " + score;
-	}
+        }
+
+    }
+
+    void OnGUI()
+    {
+        GUIStyle fontStyle = new GUIStyle(GUI.skin.GetStyle("label"));
+        fontStyle.fontSize = 24;
+
+        stringToEdit = GUI.TextField(new Rect(30, 20, 200, 50), "SCORE: " + score.ToString(), fontStyle);
+
+    }
+
 }

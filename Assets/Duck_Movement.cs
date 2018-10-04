@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Duck_Movement : GunSelection_Controller {
+public class Duck_Movement : GunSelection_Controller
+{
 
     public Vector2 position;
     public float positionX;
@@ -10,12 +11,14 @@ public class Duck_Movement : GunSelection_Controller {
     public int score_Value = 0;
     public int duck_speed = 7;
     //SG
-    bool hit;
+    public bool hit = false;
+
 
 
     // Use this for initialization
-    void Start () {
-                
+    void Start()
+    {
+
         InvokeRepeating("DuckMovement", 0.5f, 0.2f);
 
     }
@@ -28,7 +31,7 @@ public class Duck_Movement : GunSelection_Controller {
         int vectorX = (int)GetComponent<Rigidbody2D>().transform.position.x;
         int vectorY = (int)GetComponent<Rigidbody2D>().transform.position.y;
 
-        
+
         if (vectorX <= -7.5)
         {
             positionX = 0.6F;
@@ -37,7 +40,7 @@ public class Duck_Movement : GunSelection_Controller {
         {
             positionX = -0.6F;
         }
-        
+
         if (vectorY <= -3)
         {
             positionY = 1F;
@@ -46,18 +49,19 @@ public class Duck_Movement : GunSelection_Controller {
         {
             positionY = -1F;
         }
-        
+
         // translate, not position!! To add position to previous position
         GetComponent<Rigidbody2D>().transform.Translate(position);
-        
+
 
     }
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
 
-    
+    }
+
+
     class Red_duck : Duck_Movement
     {
         private int negetive_value = -5;
@@ -70,7 +74,7 @@ public class Duck_Movement : GunSelection_Controller {
 
     }
 
-    //Changes made by Sam Gouru
+    //Added by Sam Gouru
     public void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0))
@@ -78,19 +82,21 @@ public class Duck_Movement : GunSelection_Controller {
             // stop all animations
             CancelInvoke();
             hit = true;
-
             InvokeRepeating("DuckHit", 0.5f, 0.1f);
+
         }
+
     }
 
 
     void DuckHit()
     {
+
         position = new Vector2(0, -1);
         int ips = (int)GetComponent<Rigidbody2D>().transform.position.y;
 
         GetComponent<Rigidbody2D>().transform.Translate(position);
-       
+
         if (ips <= -3)
         {
             gameObject.SetActive(false);

@@ -7,7 +7,7 @@ public class Levels : MonoBehaviour
 {
 
     public int scoreValue = 0;
-    public int duck_seped = 10;
+    public int duck_speed = 10;
     public int requiredScore = 10;
     public int positionX = -1;
     public int positionY = -1;
@@ -27,7 +27,7 @@ public class Levels : MonoBehaviour
     {
         SceneManager.LoadScene("MainGame");
         InvokeRepeating("duckMovement", 0.5f, 0.2f);
-        duck_seped = 20;
+        duck_speed = 20;
 
     }
 

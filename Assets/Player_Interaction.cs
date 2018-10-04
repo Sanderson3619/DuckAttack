@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Player_Interaction : Player
 {
-  
+
     AudioSource gunSound;
-   
+
     // Use this for initialization
     void Start()
     {
