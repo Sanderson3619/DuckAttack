@@ -15,11 +15,11 @@ public class scoreupdatescript : Interaction
         stringToEdit = GUI.TextField(new Rect(30, 20, 200, 50), "SCORE: " + score.ToString(), fontStyle);
 
         // Added by Sean Anderson, to quit the game and restart
-        /*if(score==5)
+        if(score==5)
         {
             SceneManager.LoadScene("StartMenu");
             score = 0;
-        }*/
+        }
     }
 
 
