@@ -25,7 +25,7 @@ public class GunSelection_Controller : MonoBehaviour
         // Store that they chose Gun #1
         GunNumber = 1;
         // Go to the main game
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("SceneSelection");
     }
 
     // The use selects Gun #2
@@ -34,7 +34,7 @@ public class GunSelection_Controller : MonoBehaviour
         // Store that they chose Gun #2
         GunNumber = 2;
         // Go to the main game
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("SceneSelection");
     }
 
     // The user selects Gun #3
@@ -43,7 +43,7 @@ public class GunSelection_Controller : MonoBehaviour
         // Store that they chose Gun #3
         GunNumber = 3;
         // Go to the main game
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("SceneSelection");
     }
 
     // The user selects Cheat
@@ -52,6 +52,6 @@ public class GunSelection_Controller : MonoBehaviour
         // Store that the user wants to be a cheater and use Gun #4
         GunNumber = 4;
         // Go to the main game
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("SceneSelection");
     }
 }
