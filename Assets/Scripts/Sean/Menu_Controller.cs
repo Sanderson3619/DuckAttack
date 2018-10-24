@@ -35,11 +35,13 @@ public class Menu_Controller : MonoBehaviour {
     public void HelpScreen()
     {
         // Go to the help screen
+        SceneManager.LoadScene("HelpMenu");
     }
 
     // The user clicks on the Sound Settings button
     public void SoundSettings()
     {
         // Go to the sound settings screen
+        SceneManager.LoadScene("SoundMenu");
     }
 }
