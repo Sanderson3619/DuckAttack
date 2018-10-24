@@ -188,10 +188,10 @@ GameObject:
   - component: {fileID: 356138082}
   - component: {fileID: 356138081}
   - component: {fileID: 356138080}
-  - component: {fileID: 356138086}
   - component: {fileID: 356138079}
   - component: {fileID: 356138085}
   - component: {fileID: 356138084}
+  - component: {fileID: 356138088}
   m_Layer: 0
   m_Name: Ducks4
   m_TagString: Duck
@@ -436,25 +436,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 356138078}
   m_CullTransparentMesh: 0
---- !u!114 &356138086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 356138078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GunNumber: 0
-  position: {x: 0, y: 0}
-  positionX: 0
-  positionY: 0
-  score_Value: 0
-  duck_speed: 7
-  hit: 0
-  stringToEdit: Hello World
 --- !u!224 &356138087
 RectTransform:
   m_ObjectHideFlags: 0
@@ -473,6 +454,25 @@ RectTransform:
   m_AnchoredPosition: {x: -8.27, y: -2.3}
   m_SizeDelta: {x: 4.57, y: 2.48}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &356138088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356138078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunNumber: 0
+  position: {x: 0, y: 0}
+  positionX: 0
+  positionY: 0
+  score_Value: 0
+  duck_speed: 7
+  hit: 0
+  stringToEdit: ' '
 --- !u!1 &498691816
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,10 +486,10 @@ GameObject:
   - component: {fileID: 498691820}
   - component: {fileID: 498691819}
   - component: {fileID: 498691818}
-  - component: {fileID: 498691824}
   - component: {fileID: 498691817}
   - component: {fileID: 498691823}
   - component: {fileID: 498691822}
+  - component: {fileID: 498691826}
   m_Layer: 0
   m_Name: Ducks3
   m_TagString: Duck
@@ -734,25 +734,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 498691816}
   m_CullTransparentMesh: 0
---- !u!114 &498691824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 498691816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GunNumber: 0
-  position: {x: 0, y: 0}
-  positionX: 0
-  positionY: 0
-  score_Value: 0
-  duck_speed: 7
-  hit: 0
-  stringToEdit: Hello World
 --- !u!224 &498691825
 RectTransform:
   m_ObjectHideFlags: 0
@@ -771,6 +752,25 @@ RectTransform:
   m_AnchoredPosition: {x: 9.72, y: 3.93}
   m_SizeDelta: {x: 6.88, y: 4.18}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &498691826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498691816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunNumber: 0
+  position: {x: 0, y: 0}
+  positionX: 0
+  positionY: 0
+  score_Value: 0
+  duck_speed: 7
+  hit: 0
+  stringToEdit: ' '
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,6 +1073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814482571}
   - component: {fileID: 814482570}
+  - component: {fileID: 814482572}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -1139,6 +1140,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814482572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814482569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunNumber: 0
+  position: {x: 0, y: 0}
+  positionX: 0
+  positionY: 0
+  score_Value: 0
+  duck_speed: 7
+  hit: 0
+  stringToEdit: ' '
 --- !u!1 &888250038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,7 +1175,7 @@ GameObject:
   - component: {fileID: 888250044}
   - component: {fileID: 888250046}
   - component: {fileID: 888250045}
-  - component: {fileID: 888250042}
+  - component: {fileID: 888250048}
   m_Layer: 0
   m_Name: Ducks1
   m_TagString: Duck
@@ -1249,25 +1269,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &888250042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 888250038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GunNumber: 0
-  position: {x: 0, y: 0}
-  positionX: 0
-  positionY: 0
-  score_Value: 0
-  duck_speed: 7
-  hit: 0
-  stringToEdit: Hello World
 --- !u!58 &888250043
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1436,6 +1437,25 @@ RectTransform:
   m_AnchoredPosition: {x: -10.28, y: 2.4}
   m_SizeDelta: {x: 4.57, y: 2.48}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &888250048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 888250038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunNumber: 0
+  position: {x: 0, y: 0}
+  positionX: 0
+  positionY: 0
+  score_Value: 0
+  duck_speed: 7
+  hit: 0
+  stringToEdit: ' '
 --- !u!1 &1105638825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,10 +1469,10 @@ GameObject:
   - component: {fileID: 1105638827}
   - component: {fileID: 1105638826}
   - component: {fileID: 1105638830}
-  - component: {fileID: 1105638833}
   - component: {fileID: 1105638831}
   - component: {fileID: 1105638832}
   - component: {fileID: 1105638829}
+  - component: {fileID: 1105638835}
   m_Layer: 0
   m_Name: Ducks2
   m_TagString: Duck
@@ -1697,25 +1717,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1105638825}
   m_CullTransparentMesh: 0
---- !u!114 &1105638833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1105638825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GunNumber: 0
-  position: {x: 0, y: 0}
-  positionX: 0
-  positionY: 0
-  score_Value: 0
-  duck_speed: 7
-  hit: 0
-  stringToEdit: Hello World
 --- !u!224 &1105638834
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1734,6 +1735,25 @@ RectTransform:
   m_AnchoredPosition: {x: 9.59, y: 0.1}
   m_SizeDelta: {x: 7.06, y: 10.24}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1105638835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1105638825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunNumber: 0
+  position: {x: 0, y: 0}
+  positionX: 0
+  positionY: 0
+  score_Value: 0
+  duck_speed: 7
+  hit: 0
+  stringToEdit: ' '
 --- !u!1 &1418226956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,10 +1767,10 @@ GameObject:
   - component: {fileID: 1418226960}
   - component: {fileID: 1418226959}
   - component: {fileID: 1418226958}
-  - component: {fileID: 1418226964}
   - component: {fileID: 1418226957}
   - component: {fileID: 1418226963}
   - component: {fileID: 1418226962}
+  - component: {fileID: 1418226966}
   m_Layer: 0
   m_Name: Ducks6
   m_TagString: Duck
@@ -1995,25 +2015,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1418226956}
   m_CullTransparentMesh: 0
---- !u!114 &1418226964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1418226956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GunNumber: 0
-  position: {x: 0, y: 0}
-  positionX: 0
-  positionY: 0
-  score_Value: 0
-  duck_speed: 7
-  hit: 0
-  stringToEdit: Hello World
 --- !u!224 &1418226965
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2032,3 +2033,22 @@ RectTransform:
   m_AnchoredPosition: {x: 13.07, y: -3.8}
   m_SizeDelta: {x: 6.88, y: 4.18}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1418226966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1418226956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunNumber: 0
+  position: {x: 0, y: 0}
+  positionX: 0
+  positionY: 0
+  score_Value: 0
+  duck_speed: 7
+  hit: 0
+  stringToEdit: ' '

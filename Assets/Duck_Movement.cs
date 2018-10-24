@@ -10,10 +10,7 @@ public class Duck_Movement : GunSelection_Controller
     public float positionY;
     public int score_Value = 0;
     public int duck_speed = 7;
-    //SG
     public bool hit = false;
-
-
 
     // Use this for initialization
     void Start()
@@ -74,34 +71,6 @@ public class Duck_Movement : GunSelection_Controller
 
     }
 
-    //Added by Sam Gouru
-    public void OnMouseOver()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            // stop all animations
-            CancelInvoke();
-            hit = true;
-            InvokeRepeating("DuckHit", 0.5f, 0.1f);
-
-        }
-
-    }
-
-
-    void DuckHit()
-    {
-
-        position = new Vector2(0, -1);
-        int ips = (int)GetComponent<Rigidbody2D>().transform.position.y;
-
-        GetComponent<Rigidbody2D>().transform.Translate(position);
-
-        if (ips <= -3)
-        {
-            gameObject.SetActive(false);
-            CancelInvoke();
-        }
-    }
-
 }
+
+    
