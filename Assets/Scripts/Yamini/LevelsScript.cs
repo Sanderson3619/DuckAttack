@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Levels : MonoBehaviour
+public class LevelsScript : MonoBehaviour
 {
 
     public int scoreValue = 0;

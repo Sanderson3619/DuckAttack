@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sean/SoundMenu.unity
     guid: dba91bb3e89dbb14290f1a1138e5ea4a
+  - enabled: 1
+    path: Assets/Scenes/Sean/SceneSelection.unity
+    guid: fc42b9cfffa596d4d815d97ba4c6a2a1
+  - enabled: 1
+    path: Assets/Scenes/MainGame2.unity
+    guid: 105d515af65cc4245a843964d0f1a307
+  - enabled: 1
+    path: Assets/Scenes/MainGame3.unity
+    guid: 504e70c828043314d904ef25ca56fd06
   m_configObjects: {}
