@@ -10,7 +10,8 @@ public class GunSelection_Controller : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        // Switch to 1600 x 1050 windowed
+        Screen.SetResolution(1680, 1050, false);
     }
 
     // Update is called once per frame
@@ -53,5 +54,11 @@ public class GunSelection_Controller : MonoBehaviour
         GunNumber = 4;
         // Go to the main game
         SceneManager.LoadScene("SceneSelection");
+    }
+
+    public void BackButton()
+    {
+        // Go to the help screen
+        SceneManager.LoadScene("StartMenu");
     }
 }
