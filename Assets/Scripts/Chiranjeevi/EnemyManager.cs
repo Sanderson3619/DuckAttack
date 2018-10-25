@@ -8,7 +8,7 @@ public class EnemyManager : MonoBehaviour {
 	public float spawnTime = 5f;
 	public Transform[] spawnPoints;
 	public Duck_Movement duck;
-	public static int noDucks = 0;
+	public static int noofDucks = 0;
 	public static int maxDucks = 0;
 	
 	void Start()
@@ -25,7 +25,7 @@ public class EnemyManager : MonoBehaviour {
 		// 	Invoke("Spawn", 1);
 		// 	duck.isDead = false;
 		// }	
-		// UnityEngine.Debug.Log(noDucks);
+		// UnityEngine.Debug.Log(noofDucks);
 	}
 	
 	void Spawn()
@@ -33,12 +33,13 @@ public class EnemyManager : MonoBehaviour {
 		// duck.Initialize();
 		int spawnPointIndex = Random.Range(0, spawnPoints.Length);
 		{
-			if(maxDucks < 4)
+			if(maxDucks < 6)
 			{
 			Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
-			noDucks++;	
+			noofDucks++;	
 			maxDucks++;
-			} 			
+			} 		
+			UnityEngine.Debug.Log(noofDucks);	
 		}
 		
 	}

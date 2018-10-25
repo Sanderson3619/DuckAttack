@@ -9,7 +9,8 @@ public class Scene_Selection_Controller : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        // Switch to 1600 x 1050 windowed
+        Screen.SetResolution(1680, 1050, false);
     }
 
     // Update is called once per frame
@@ -37,5 +38,11 @@ public class Scene_Selection_Controller : MonoBehaviour
     {
         // Go to the main game
         SceneManager.LoadScene("MainGame3");
+    }
+
+    public void BackButton()
+    {
+        // Go to the help screen
+        SceneManager.LoadScene("GunSelection");
     }
 }

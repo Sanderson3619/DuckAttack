@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 222110150033173616}
   - component: {fileID: 114430471152849808}
   - component: {fileID: 60522279208709100}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: duck
   m_TagString: Duck
   m_Icon: {fileID: 0}
@@ -54,16 +54,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4bad3c36f90ba4f8f5f53dd65f8317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GunNumber: 0
+  enemy: {fileID: 0}
+  spawnTime: 5
+  spawnPoints: []
+  duck: {fileID: 0}
   position: {x: 0, y: 0}
   positionX: -1
   positionY: -1
   score_Value: 0
   duck_speed: 1
-  isDead: 0
-  hello: HelloWorld
-  enemyPrefab: {fileID: 127844}
-  spawnTime: 5
   hit: 0
 --- !u!212 &21228690
 SpriteRenderer:
@@ -99,7 +98,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 70574f9f9042cd04e8862848b4f7f925, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -377,16 +376,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GunNumber: 0
+  enemy: {fileID: 0}
+  spawnTime: 5
+  spawnPoints: []
+  duck: {fileID: 0}
   position: {x: 0, y: 0}
   positionX: 0
   positionY: 0
   score_Value: 0
   duck_speed: 1
-  isDead: 0
-  hello: HelloWorld
-  enemyPrefab: {fileID: 0}
-  spawnTime: 5
   hit: 0
   stringToEdit: Hello World
 --- !u!222 &222110150033173616
