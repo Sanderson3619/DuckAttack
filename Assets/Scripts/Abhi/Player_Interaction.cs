@@ -23,6 +23,9 @@ public class Player_Interaction : GunSelection_Controller
         spriteRenderer = GetComponent<SpriteRenderer>();
         Cursor.visible = false;
 
+        //Test gun selection
+        Debug.Log("Gun: " + this.gun);
+
         if (this.gun == 1)
         {
             spriteRenderer.sprite = mySprite1;
@@ -33,8 +36,12 @@ public class Player_Interaction : GunSelection_Controller
         else
         {
             spriteRenderer.sprite = mySprite3;
-        }
+        } 
 
+        /*
+        Vector2 point = new Vector2();
+        point = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        Debug.Log("World: " + point.ToString());*/
 
     }
 
@@ -45,6 +52,8 @@ public class Player_Interaction : GunSelection_Controller
         newPos.z = transform.position.z;
         transform.position = newPos;
 
+        //Testing mouse position to scope position
+        //Debug.Log(newPos);
         if (Input.GetMouseButtonDown(0) == true)
         {
             gunSound.Play();
