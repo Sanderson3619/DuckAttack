@@ -41,7 +41,7 @@ public class scoreupdatescript : Interaction
             StartCoroutine(ExecuteTimer());
         }
 
-        TimerString = GUI.TextField(new Rect(600, 20, 200, 50), "Timer: " + currentTime.ToString("n2"), fontStyle);
+        TimerString = GUI.TextField(new Rect(600, 20, 200, 50), "Timer: " + (currentTime/2).ToString("n2"), fontStyle);
         
     }
 
@@ -59,13 +59,14 @@ public class scoreupdatescript : Interaction
 
     IEnumerator ExecuteTimer()
     {
-        while (currentTime < 30)
+        while (currentTime < 60)
         {
             yield return new WaitForSeconds(step);
             currentTime += step;
             
         }
         yield return new WaitForSeconds(step);
+        Cursor.visible = true;
         SceneManager.LoadScene("Completed Menu");
 
     }
