@@ -11,9 +11,13 @@ public class Interaction : Duck_Movement
 
     // Use this for initialization
     void Start () {
-
+        
         instruction = GetComponent<Text>();
-        instruction.text = "Score: 0";
+        if (instruction)
+        {
+            instruction.text = "Score: 0";
+        }
+        
     }
 
     void Update_score(bool hit)
@@ -21,11 +25,13 @@ public class Interaction : Duck_Movement
         if (hit == true)
         {
             score = score + 1;
-
         }
+
+        
 
     }
 
+    
 
     public void OnMouseOver()
     {
@@ -33,7 +39,6 @@ public class Interaction : Duck_Movement
         {
             // stop all animations
             CancelInvoke();
-            
             InvokeRepeating("DuckHit", 0.5f, 0.1f);
 
         }
