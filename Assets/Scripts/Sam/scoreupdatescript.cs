@@ -41,7 +41,8 @@ public class scoreupdatescript : Interaction
             StartCoroutine(ExecuteTimer());
         }
 
-        TimerString = GUI.TextField(new Rect(600, 20, 200, 50), "Timer: " + (currentTime/4).ToString("n2"), fontStyle);
+        int four = 4;
+        TimerString = GUI.TextField(new Rect(600, 20, 200, 50), "Timer: " + (currentTime/ four).ToString("n2"), fontStyle);
         
     }
 
