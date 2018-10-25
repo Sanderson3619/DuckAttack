@@ -6,7 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class scoreupdatescript : Interaction
 {
+    public Text timerText;
+    private float currentTime = 0;
+    private float step = 0.01f;
+    Text timer;
+    public string TimerString = " ";
 
+    void Start()
+    {
+      
+        timer = GetComponent<Text>();
+        if (timer)
+        {
+            timer.text = "Time: 0";
+          
+        }
+         
+    }
 
     void OnGUI()
     {
@@ -20,6 +36,12 @@ public class scoreupdatescript : Interaction
             StartCoroutine(ExecuteAfterTime());
         }
 
+        if (currentTime == 0)
+        {
+            StartCoroutine(ExecuteTimer());
+        }
+
+        TimerString = GUI.TextField(new Rect(600, 20, 200, 50), "Timer: " + currentTime.ToString("n2"), fontStyle);
         
     }
 
@@ -31,6 +53,19 @@ public class scoreupdatescript : Interaction
         Cursor.visible = true;
         //------------------------------------
 
+        SceneManager.LoadScene("Completed Menu");
+
+    }
+
+    IEnumerator ExecuteTimer()
+    {
+        while (currentTime < 30)
+        {
+            yield return new WaitForSeconds(step);
+            currentTime += step;
+            
+        }
+        yield return new WaitForSeconds(step);
         SceneManager.LoadScene("Completed Menu");
 
     }

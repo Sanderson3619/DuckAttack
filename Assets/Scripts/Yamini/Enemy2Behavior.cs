@@ -9,6 +9,9 @@ public class Enemy2Behavior : Enemy2Manager {
     private float positionX;
     private float positionY;
 
+    public float MoveSpeed = 3.0f;
+
+
     // Use this for initialization
     void Start () {
         InvokeRepeating("Enemy2Movement", 0.5f, 0.3f);
@@ -23,9 +26,19 @@ public class Enemy2Behavior : Enemy2Manager {
         int vectorY = (int)GetComponent<Rigidbody2D>().transform.position.y;
 
 
+        if (vectorX <= -7)
+        {
+            transform.Rotate(new Vector3(0, 180, 0));
+            //transform.rotation = Quaternion.Euler(0, 180f, 0);
+        }
+        else if (vectorX >= 10) {
+            transform.Rotate(new Vector3(0, 180, 0));
+        }
+        
         if (vectorX <= -7.2)
         {
             positionX = 0.3F;
+
         }
         else if (vectorX >= 7.2)
         {
@@ -34,7 +47,7 @@ public class Enemy2Behavior : Enemy2Manager {
 
         if (vectorY <= -3)
         {
-            positionY = 0.2F;
+            positionY = 0.3F;
         }
         else if (vectorY >= -1)
         {
@@ -47,6 +60,6 @@ public class Enemy2Behavior : Enemy2Manager {
 
     // Update is called once per frame
     void Update () {
-		
-	}
+        transform.Translate(Vector3.forward * MoveSpeed * Time.deltaTime);
+    }
 }

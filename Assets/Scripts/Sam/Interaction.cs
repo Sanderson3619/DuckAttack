@@ -26,13 +26,9 @@ public class Interaction : Duck_Movement
         {
             score = score + 1;
         }
-
         
-
     }
-
     
-
     public void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0))
