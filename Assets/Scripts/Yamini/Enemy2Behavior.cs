@@ -17,7 +17,7 @@ public class Enemy2Behavior : Enemy2Manager {
         InvokeRepeating("Enemy2Movement", 0.5f, 0.3f);
     }
 
-    // Enemy2Behavior
+    // Enemy2 Movement
     public void Enemy2Movement()
     {
         position = new Vector2(positionX, positionY);
