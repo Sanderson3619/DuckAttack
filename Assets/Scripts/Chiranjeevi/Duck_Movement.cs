@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Duck_Movement : EnemyManager
+public class Duck_Movement : MonoBehaviour
 {
-
     public Vector2 position;
-    public float positionX;
-    public float positionY;
+    private float positionX;
+    private float positionY;
     public int score_Value = 0;
-  //  public int duck_speed = 7;
     public bool hit = false;
+    public static bool isDead = false;
 
     // Use this for initialization
     void Start()
@@ -45,11 +44,14 @@ public class Duck_Movement : EnemyManager
         {
             positionY = -1F;
         }
-
         // translate, not position!! To add position to previous position
         GetComponent<Rigidbody2D>().transform.Translate(position);
     }
 
+    public bool duck_Check()
+    {
+        return isDead;
+    }
 //    public void Initialize()
 // 	{	
 //         UnityEngine.Debug.Log("noDucks");

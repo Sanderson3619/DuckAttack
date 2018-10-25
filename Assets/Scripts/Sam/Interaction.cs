@@ -54,6 +54,7 @@ public class Interaction : Duck_Movement
             gameObject.SetActive(false);
             CancelInvoke();
             hit = true;
+            Duck_Movement.isDead = true;
         }
 
         Update_score(hit);

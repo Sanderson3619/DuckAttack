@@ -54,13 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4bad3c36f90ba4f8f5f53dd65f8317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 127844}
-  spawnTime: 5
-  spawnPoints: []
-  duck: {fileID: 0}
   position: {x: 0, y: 0}
-  positionX: -1
-  positionY: 0
   score_Value: 0
   hit: 0
 --- !u!212 &21228690
@@ -140,6 +134,10 @@ Prefab:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 127844}
+    - target: {fileID: 0}
+      propertyPath: hit
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127844}
@@ -399,13 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  spawnTime: 5
-  spawnPoints: []
-  duck: {fileID: 0}
   position: {x: 0, y: 0}
-  positionX: 0
-  positionY: 0
   score_Value: 0
   hit: 0
   stringToEdit: ' '

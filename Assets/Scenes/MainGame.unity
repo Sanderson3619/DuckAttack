@@ -558,13 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  spawnTime: 5
-  spawnPoints: []
-  duck: {fileID: 0}
   position: {x: 0, y: 0}
-  positionX: 0
-  positionY: 0
   score_Value: 0
   hit: 0
   stringToEdit: ' '
@@ -614,8 +608,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9808b8cdb15ea846bc5d1b44d8b2c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position: {x: 0, y: 0}
+  score_Value: 0
+  hit: 0
   enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
-  spawnTime: 6
+  spawnTime: 5
   spawnPoints:
   - {fileID: 1775803815}
   duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
@@ -630,8 +627,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9808b8cdb15ea846bc5d1b44d8b2c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position: {x: 0, y: 0}
+  score_Value: 0
+  hit: 0
   enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
-  spawnTime: 6
+  spawnTime: 5
   spawnPoints:
   - {fileID: 903200834}
   duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
