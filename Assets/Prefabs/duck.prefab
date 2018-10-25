@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 21228690}
   - component: {fileID: 11479896}
   - component: {fileID: 5009794}
-  - component: {fileID: 114754259805762574}
+  - component: {fileID: 114655058288685898}
   - component: {fileID: 82754989787013188}
   - component: {fileID: 222110150033173616}
   - component: {fileID: 114430471152849808}
@@ -385,7 +385,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
---- !u!114 &114754259805762574
+--- !u!114 &114655058288685898
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 127844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
@@ -404,9 +404,9 @@ MonoBehaviour:
   positionX: 0
   positionY: 0
   score_Value: 0
-  duck_speed: 1
+  duck_speed: 7
   hit: 0
-  stringToEdit: Hello World
+  stringToEdit: ' '
 --- !u!222 &222110150033173616
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -422,7 +422,7 @@ RectTransform:
   m_GameObject: {fileID: 127844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
