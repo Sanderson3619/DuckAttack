@@ -21,6 +21,7 @@ public class Player_Interaction : GunSelection_Controller
         test = GetComponent<GunSelection_Controller>();
         this.gun = test.getGunNumber();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        Cursor.visible = false;
 
         if (this.gun == 1)
         {
