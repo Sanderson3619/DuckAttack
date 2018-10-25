@@ -9,7 +9,7 @@ public class Duck_Movement : EnemyManager
     public float positionX;
     public float positionY;
     public int score_Value = 0;
-    public int duck_speed = 7;
+  //  public int duck_speed = 7;
     public bool hit = false;
 
     // Use this for initialization
