@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainGame3.unity
     guid: 504e70c828043314d904ef25ca56fd06
+  - enabled: 1
+    path: Assets/Scenes/Sean/Completed Menu.unity
+    guid: c94d76aa39506794bbd53257f44d37ab
   m_configObjects: {}

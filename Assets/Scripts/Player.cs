@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Player : MonoBehaviour
 {
@@ -9,22 +10,66 @@ public class Player : MonoBehaviour
     //public CursorMode cursorMode = CursorMode.Auto;
     //public Vector2 hotSpot = Vector2.zero;
 
+//  Chiranjeevi Code for Testing
+    private NavMeshAgent navMesh;
+    private Transform targetedEnemy;
+    private Ray shootray;
+    private RaycastHit shoothit;
+    private bool enemyclicked;
 
-    // Use this for initialization
-    void Start()
+ void Awake()
     {
-
+        navMesh = GetComponent<NavMeshAgent> ();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //<<<<<<< HEAD
-        /* Vector3 newPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Mathf.Abs(Camera.main.transform.position.z - transform.position.z)));
-         newPos.z = transform.position.z;
-         transform.position = newPos;
-         */
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if(Input.GetButtonDown("Fire1")){
+            if(Physics.Raycast(ray, out hit, 100))
+            {
+                if(hit.collider.CompareTag("Duck"))
+                {
+                    targetedEnemy = hit.transform;
+                    enemyclicked = true;
+                }
+                else
+                {
+                    enemyclicked = false;
+                    navMesh.destination = hit.point;
+                    navMesh.Resume();
+                }
+            }
+        }
+        if(enemyclicked)
+        {
+            MoveandShoot();
+        }
     }
+
+    private void MoveandShoot()
+    {
+        if(targetedEnemy == null)
+            return;
+        navMesh.destination = targetedEnemy.position;
+        Input.GetButtonDown("Fire1");
+    }
+
+//   Chiranjeevi Code for Testing
+
+    // Use this for initialization
+   
+
+    // Update is called once per frame
+    // void Update()
+    // {
+    //     //<<<<<<< HEAD
+    //     /* Vector3 newPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Mathf.Abs(Camera.main.transform.position.z - transform.position.z)));
+    //      newPos.z = transform.position.z;
+    //      transform.position = newPos;
+    //      */
+    // }
     //=======
 
 
@@ -32,11 +77,11 @@ public class Player : MonoBehaviour
 
     //on awake
 
-    private void Awake()
-    {
-        //Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+    // private void Awake()
+    // {
+    //     //Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
 
-    }
+    // }
 
 
     // Handle mouse click
