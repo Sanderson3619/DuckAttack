@@ -51,7 +51,7 @@ public class scoreupdatescript : Interaction
 
         //Abhilash is making this change below
         Cursor.visible = true;
-        //------------------------------------
+       
 
         SceneManager.LoadScene("Completed Menu");
 

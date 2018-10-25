@@ -286,6 +286,8 @@ MonoBehaviour:
   duck_speed: 7
   hit: 0
   stringToEdit: ' '
+  timerText: {fileID: 0}
+  TimerString: ' '
 --- !u!212 &560915210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -471,6 +473,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30755ee1410ff0643a52ef66da30d0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySprite1: {fileID: 21300000, guid: e56f58d5311c8be4ca84488dc175c281, type: 3}
+  mySprite2: {fileID: 21300000, guid: 2c7800ef778ee3342a53bf94ed8ff47f, type: 3}
+  mySprite3: {fileID: 21300000, guid: 986dde6b5c77b9f4885df451a190f5f9, type: 3}
 --- !u!50 &1158022242
 Rigidbody2D:
   serializedVersion: 4
@@ -602,3 +607,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy2: {fileID: 220232948}
+  spawnPoints: []
