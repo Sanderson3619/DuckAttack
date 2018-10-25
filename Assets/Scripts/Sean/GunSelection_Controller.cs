@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GunSelection_Controller : MonoBehaviour
 {
-    public int GunNumber;
+    public static int GunNumber;
     // Use this for initialization
     void Start()
     {
@@ -17,6 +17,12 @@ public class GunSelection_Controller : MonoBehaviour
     void Update()
     {
 
+    }
+
+    //Using this to get gunNumber: Added by Abhilash
+    public int getGunNumber()
+    {
+        return GunNumber;
     }
 
     // The user selects Gun #1
