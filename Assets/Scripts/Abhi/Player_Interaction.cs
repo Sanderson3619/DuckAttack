@@ -57,6 +57,11 @@ public class Player_Interaction : GunSelection_Controller
         if (Input.GetMouseButtonDown(0) == true)
         {
             gunSound.Play();
+            this.spriteRenderer.transform.localScale += new Vector3(0.02f, 0.02f, 0f);
+            //Should figure out a way to put some delay here
+            //The delay should merely pass time by doing something else, but not pause the processing
+            this.spriteRenderer.transform.localScale -= new Vector3(0.02f, 0.02f, 0f);
+
         }
     }
 
