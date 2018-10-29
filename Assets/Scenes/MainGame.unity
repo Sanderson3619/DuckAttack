@@ -612,7 +612,7 @@ MonoBehaviour:
   score_Value: 0
   hit: 0
   enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
-  spawnTime: 5
+  spawnTime: 6
   spawnPoints:
   - {fileID: 1775803815}
   duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
@@ -631,7 +631,7 @@ MonoBehaviour:
   score_Value: 0
   hit: 0
   enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
-  spawnTime: 5
+  spawnTime: 6
   spawnPoints:
   - {fileID: 903200834}
   duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}

@@ -31,7 +31,7 @@ public class scoreupdatescript : Interaction
 
         stringToEdit = GUI.TextField(new Rect(30, 20, 200, 50), "SCORE: " + score.ToString(), fontStyle);
 
-        if (score == 6)
+        if (score == 10)
         {
             StartCoroutine(ExecuteAfterTime());
         }

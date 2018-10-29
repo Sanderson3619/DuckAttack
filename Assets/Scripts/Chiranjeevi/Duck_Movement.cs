@@ -5,8 +5,8 @@ using UnityEngine;
 public class Duck_Movement : MonoBehaviour
 {
     public Vector2 position;
-    private float positionX;
-    private float positionY;
+    private float positionX = -1;
+    private float positionY= -1;
     public int score_Value = 0;
     public bool hit = false;
     public static bool isDead = false;
@@ -15,7 +15,6 @@ public class Duck_Movement : MonoBehaviour
     void Start()
     {
         InvokeRepeating("DuckMovement", 0.5f, 0.3f);
-        
     }
 
     // Movement of the duck is declared here
@@ -51,6 +50,11 @@ public class Duck_Movement : MonoBehaviour
     public bool duck_Check()
     {
         return isDead;
+    }
+
+    public void setDuck(bool value)
+    {
+        isDead = value;
     }
 //    public void Initialize()
 // 	{	
