@@ -10,11 +10,13 @@ public class Duck_Movement : MonoBehaviour
     public int score_Value = 0;
     public bool hit = false;
     public static bool isDead = false;
-
+    // public AudioClip duckdead;
+    // AudioSource enemyaudio;
     // Use this for initialization
     void Start()
     {
         InvokeRepeating("DuckMovement", 0.5f, 0.3f);
+        // enemyaudio = GetComponent<AudioSource> ();
     }
 
     // Movement of the duck is declared here
@@ -47,6 +49,17 @@ public class Duck_Movement : MonoBehaviour
         GetComponent<Rigidbody2D>().transform.Translate(position);
     }
 
+    // public void changeSound()
+    // {
+    //     if(isDead)
+    //     {
+    //         UnityEngine.Debug.Log("Hello");
+    //         enemyaudio.clip = duckdead;
+    //         enemyaudio.Play();
+    //         UnityEngine.Debug.Log("After Hello");
+    //     }
+    // }
+    
     public bool duck_Check()
     {
         return isDead;

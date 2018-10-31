@@ -614,13 +614,13 @@ MonoBehaviour:
   position: {x: 0, y: 0}
   score_Value: 0
   hit: 0
-  enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 6
   spawnPoints:
   - {fileID: 1775803815}
   - {fileID: 903200834}
   - {fileID: 1449512799}
-  duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!114 &884234353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,13 +635,13 @@ MonoBehaviour:
   position: {x: 0, y: 0}
   score_Value: 0
   hit: 0
-  enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 6
   spawnPoints:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 1915051518}
-  duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!114 &884234354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,13 +656,13 @@ MonoBehaviour:
   position: {x: 0, y: 0}
   score_Value: 0
   hit: 0
-  enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 6
   spawnPoints:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 1449512799}
-  duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!114 &884234355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,13 +677,13 @@ MonoBehaviour:
   position: {x: 0, y: 0}
   score_Value: 0
   hit: 0
-  enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 6
   spawnPoints:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 1449512799}
-  duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!1 &903200833
 GameObject:
   m_ObjectHideFlags: 0
