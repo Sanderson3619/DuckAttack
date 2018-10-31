@@ -44,4 +44,11 @@ public class Menu_Controller : MonoBehaviour {
         // Go to the sound settings screen
         SceneManager.LoadScene("SoundMenu");
     }
+
+    // The user clicks on the Demo game button
+    public void DemoMode()
+    {
+        // Go to the Demo Mode Screen screen
+        SceneManager.LoadScene("DemoMode");
+    }
 }
