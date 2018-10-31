@@ -574,6 +574,8 @@ GameObject:
   - component: {fileID: 884234351}
   - component: {fileID: 884234353}
   - component: {fileID: 884234352}
+  - component: {fileID: 884234355}
+  - component: {fileID: 884234354}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -639,6 +641,48 @@ MonoBehaviour:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 1915051518}
+  duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+--- !u!114 &884234354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884234350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9808b8cdb15ea846bc5d1b44d8b2c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 0}
+  score_Value: 0
+  hit: 0
+  enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  spawnTime: 6
+  spawnPoints:
+  - {fileID: 903200834}
+  - {fileID: 1775803815}
+  - {fileID: 1449512799}
+  duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+--- !u!114 &884234355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884234350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9808b8cdb15ea846bc5d1b44d8b2c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 0}
+  score_Value: 0
+  hit: 0
+  enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  spawnTime: 6
+  spawnPoints:
+  - {fileID: 903200834}
+  - {fileID: 1775803815}
+  - {fileID: 1449512799}
   duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
 --- !u!1 &903200833
 GameObject:
