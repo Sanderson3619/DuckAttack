@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Duck_Movement : MonoBehaviour
+public class Duck_MovementTest : MonoBehaviour
 {
     // Two dimensional vector variable to store the position of the enemy. 
     public Vector2 position;
     // Float variable declared to chnage the direction of the ducks when they reached the boundaries. 
     private float positionX = -1;
     // Float variable declared to chnage the direction of the ducks when they reached the boundaries.
-    private float positionY= 1;
+    private float positionY= 0;
     // Integer variabe declared to update the score value each time they shot by the user. 
     public int scoreValue = 0;
     // Bool variable declared to check whether the enemy is hit or not.
@@ -58,17 +58,16 @@ public class Duck_Movement : MonoBehaviour
     }
 
     // Returns the status of the duck i.1 dead or alive.
-    public bool duckCheck()
-    {
-        return isDead;
-    }
+    // public bool duckCheck()
+    // {
+    //     return isDead;
+    // }
 
-    // Sets back the state of the duck to its value passed.
-    public void setDuck(bool value)
-    {
-        isDead = value;
-    }
-
+    // // Sets back the state of the duck to its value passed.
+    // public void setDuck(bool value)
+    // {
+    //     isDead = value;
+    // }
 }
 
     

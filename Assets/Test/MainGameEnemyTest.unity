@@ -261,7 +261,6 @@ GameObject:
   m_Component:
   - component: {fileID: 601551485}
   - component: {fileID: 601551486}
-  - component: {fileID: 601551487}
   - component: {fileID: 601551488}
   - component: {fileID: 601551490}
   - component: {fileID: 601551489}
@@ -331,17 +330,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &601551487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 601551484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a643b19c53da557458a99d371572152f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &601551488
 Rigidbody2D:
   serializedVersion: 4
@@ -559,7 +547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
-  score_Value: 0
+  scoreValue: 0
   hit: 0
   stringToEdit: ' '
   timerText: {fileID: 0}
@@ -610,14 +598,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
-  score_Value: 0
+  scoreValue: 0
   hit: 0
   enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
   spawnTime: 0.5
-  spawnPoints:
-  - {fileID: 1775803815}
-  - {fileID: 1807436460}
-  duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  spawnPointstest: []
+  duck: {fileID: 0}
 --- !u!114 &884234353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,14 +616,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
-  score_Value: 0
+  scoreValue: 0
   hit: 0
   enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
   spawnTime: 0.5
-  spawnPoints:
-  - {fileID: 903200834}
-  - {fileID: 1313258556}
-  duck: {fileID: 11479896, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  spawnPointstest: []
+  duck: {fileID: 0}
 --- !u!1 &903200833
 GameObject:
   m_ObjectHideFlags: 0

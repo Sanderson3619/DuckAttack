@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyTestScript : Duck_Movement {
+public class EnemyPlayerTestScript : Duck_MovementTest {
 
 	public GameObject enemy;
 	public float spawnTime = 5f;
-	public Transform[] spawnPointstest;
-	public Duck_Movement duck;
+	public Transform[] spawnPoints;
+
 	public static int noofDucks = 0;
 	public static int maxDucks = 0;
 	
 	void Start()
 	{
-		duck = GetComponent<Duck_Movement>();
 		InvokeRepeating("Spawn", 0.1f, spawnTime);        
 	}
 
@@ -25,11 +24,11 @@ public class EnemyTestScript : Duck_Movement {
 	void Spawn()
 	{	
 		// duck.Initialize();
-		int spawnPointIndextest = Random.Range(0, spawnPointstest.Length);
+		int spawnPointIndex = Random.Range(0, spawnPoints.Length);
 		{
-			if(maxDucks < 1000)
+			if(maxDucks < 6)
 			{
-			Instantiate(enemy, spawnPointstest[spawnPointIndextest].position, spawnPointstest[spawnPointIndextest].rotation);
+			Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
 			noofDucks++;	
 			maxDucks++;
 			} 			
