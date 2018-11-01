@@ -600,10 +600,10 @@ MonoBehaviour:
   position: {x: 0, y: 0}
   scoreValue: 0
   hit: 0
-  enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 0.5
   spawnPointstest: []
-  duck: {fileID: 0}
+  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!114 &884234353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,10 +618,10 @@ MonoBehaviour:
   position: {x: 0, y: 0}
   scoreValue: 0
   hit: 0
-  enemy: {fileID: 127844, guid: a4b5ec136f92d4b04832625817148629, type: 2}
+  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 0.5
   spawnPointstest: []
-  duck: {fileID: 0}
+  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!1 &903200833
 GameObject:
   m_ObjectHideFlags: 0
