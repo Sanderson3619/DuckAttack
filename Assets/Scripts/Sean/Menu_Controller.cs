@@ -8,8 +8,7 @@ public class Menu_Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        // Switch to 1600 x 1050 windowed
-        Screen.SetResolution(1680, 1050, false);
+
     }
 	
 	// Update is called once per frame
@@ -44,5 +43,12 @@ public class Menu_Controller : MonoBehaviour {
     {
         // Go to the sound settings screen
         SceneManager.LoadScene("SoundMenu");
+    }
+
+    // The user clicks on the Demo game button
+    public void DemoMode()
+    {
+        // Go to the Demo Mode Screen screen
+        SceneManager.LoadScene("DemoMode");
     }
 }

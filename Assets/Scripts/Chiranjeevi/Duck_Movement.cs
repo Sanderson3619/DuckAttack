@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Duck_Movement : EnemyManager
+public class Duck_Movement : MonoBehaviour
 {
-
     public Vector2 position;
-    public float positionX;
-    public float positionY;
+    private float positionX = -1;
+    private float positionY= -1;
     public int score_Value = 0;
-    public int duck_speed = 7;
     public bool hit = false;
-
+    public static bool isDead = false;
+    // public AudioClip duckdead;
+    // AudioSource enemyaudio;
     // Use this for initialization
     void Start()
     {
         InvokeRepeating("DuckMovement", 0.5f, 0.3f);
-        
+        // enemyaudio = GetComponent<AudioSource> ();
     }
 
     // Movement of the duck is declared here
@@ -45,11 +45,30 @@ public class Duck_Movement : EnemyManager
         {
             positionY = -1F;
         }
-
         // translate, not position!! To add position to previous position
         GetComponent<Rigidbody2D>().transform.Translate(position);
     }
 
+    // public void changeSound()
+    // {
+    //     if(isDead)
+    //     {
+    //         UnityEngine.Debug.Log("Hello");
+    //         enemyaudio.clip = duckdead;
+    //         enemyaudio.Play();
+    //         UnityEngine.Debug.Log("After Hello");
+    //     }
+    // }
+    
+    public bool duck_Check()
+    {
+        return isDead;
+    }
+
+    public void setDuck(bool value)
+    {
+        isDead = value;
+    }
 //    public void Initialize()
 // 	{	
 //         UnityEngine.Debug.Log("noDucks");

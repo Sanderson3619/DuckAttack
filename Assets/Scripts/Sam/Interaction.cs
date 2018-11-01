@@ -11,9 +11,13 @@ public class InteractionUFO : Duck_Movement
 
     // Use this for initialization
     void Start () {
-
+        
         instruction = GetComponent<Text>();
-        instruction.text = "Score: 0";
+        if (instruction)
+        {
+            instruction.text = "Score: 0";
+        }
+        
     }
 
     void Update_score(bool hit)
@@ -21,19 +25,16 @@ public class InteractionUFO : Duck_Movement
         if (hit == true)
         {
             score = score + 1;
-
         }
-
+        
     }
-
-
+    
     public void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0))
         {
             // stop all animations
             CancelInvoke();
-            
             InvokeRepeating("DuckHit", 0.5f, 0.1f);
 
         }
@@ -53,6 +54,7 @@ public class InteractionUFO : Duck_Movement
             gameObject.SetActive(false);
             CancelInvoke();
             hit = true;
+            Duck_Movement.isDead = true;
         }
 
         Update_score(hit);

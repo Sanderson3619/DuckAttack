@@ -6,18 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class GunSelection_Controller : MonoBehaviour
 {
-    public int GunNumber;
+    public static int GunNumber;
     // Use this for initialization
     void Start()
     {
-        // Switch to 1600 x 1050 windowed
-        Screen.SetResolution(1680, 1050, false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    //Using this to get gunNumber: Added by Abhilash
+    public int getGunNumber()
+    {
+        return GunNumber;
     }
 
     // The user selects Gun #1
