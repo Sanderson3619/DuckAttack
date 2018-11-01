@@ -21,7 +21,6 @@ public class EnemyManager : Duck_Movement {
 	void Update () {
 		if(duck.duck_Check() == true)
 		{
-			// duck.changeSound();
 			Invoke("Spawn", 1);
 			duck.setDuck(false);
 		}	

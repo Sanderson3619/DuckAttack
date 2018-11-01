@@ -4,45 +4,42 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DemoMenu : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-	public void MenuTest ()
+    // Calls the menuTest method when the user choose to test the menu screen.
+	public void menuTest ()
     {
+        // Go to the Menu test scene.
 		SceneManager.LoadScene("StartMenu");
     }
 
-	public void PlayerTest ()
+    // Calls the playerTest method when the user choose to test the player.
+	public void playerTest ()
     {
-        // Go to the main game
-        SceneManager.LoadScene("MainGamePlayerTest");
+        // Go to the Player test scene.
+        SceneManager.LoadScene("MainGame");
 
     }
 
-	public void EnemyTest ()
+    // Calls the enemyTest method when the user choose to test the enemies on the screen.
+	public void enemyTest ()
     {
-        // Go to the main game
+        // Go to the Enemy test scene.
         SceneManager.LoadScene("MainGameEnemyTest");
 
     }
 
-	public void ScoreTest ()
+    // Calls the scoreTest method when the user choose to test the score on the screen.
+	public void scoreTest ()
     {
-        // Go to the main game
-        SceneManager.LoadScene("MainGamePlayerTest");
+        // Go to the Score test scene.
+        SceneManager.LoadScene("MainGame");
 
     }
-	public void BackToMainMenu()
+
+    // Calls the backToMainMenu method when the user choose to go back to the main menu screen.
+	public void backToMainMenu()
     {
-        // Go back to the Start Menu
+        // Go back to the Start Menu scene.
         SceneManager.LoadScene("StartMenu");
     }
 }
