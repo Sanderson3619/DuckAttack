@@ -37,6 +37,6 @@ public class DemoMenu : MonoBehaviour {
 	public void backToMainMenu()
     {
         // Go back to the Start Menu scene.
-        SceneManager.LoadScene("MainGamePlayerTest");
+        SceneManager.LoadScene("StartMenu");
     }
 }
