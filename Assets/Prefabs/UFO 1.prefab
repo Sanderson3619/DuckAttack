@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212705173787321246}
   - component: {fileID: 50511998680232776}
   - component: {fileID: 114542332514237570}
+  - component: {fileID: 114112246676209516}
   m_Layer: 0
   m_Name: UFO 1
   m_TagString: Untagged
@@ -62,6 +63,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &114112246676209516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1149327032404216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  spawnTime: 5
+  spawnPoints: []
+  duck: {fileID: 0}
+  position: {x: 0, y: 0}
+  positionX: 0
+  positionY: 0
+  score_Value: 0
+  duck_speed: 7
+  hit: 0
+  stringToEdit: ' '
 --- !u!114 &114542332514237570
 MonoBehaviour:
   m_ObjectHideFlags: 1

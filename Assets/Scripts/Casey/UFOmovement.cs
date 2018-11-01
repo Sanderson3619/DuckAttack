@@ -5,32 +5,44 @@ using UnityEngine;
 public class UFOmovement : MonoBehaviour {
 
 	private float speed = 2f;
+	//used for altering movement speed of enemies
+	public bool hit = false;
+	//used for gun/enemy interaction
+	public Vector2 position;
+	//used so gun can track enemy
 
 
 	// Use this for initialization
 	void Start () {
 		Vector2 angle = new Vector2 (-1, 0.5f);
+		//initial movement vector
 		GetComponent<Rigidbody2D> ().velocity = angle * speed;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		float xpos = GetComponent<Rigidbody2D> ().transform.position.x;
-		float ypos = GetComponent<Rigidbody2D> ().transform.position.y;
+		float xPos = GetComponent<Rigidbody2D> ().transform.position.x;
+		//current x coordinate of enemy
+		float yPos = GetComponent<Rigidbody2D> ().transform.position.y;
+		//current y coordinate of enemy
+
+		position = new Vector2 (xPos, yPos);
+		//current x and y coordinate of enemy
 
 		Vector2 angle = new Vector2 (0, 0);
+		//angle is added on to current movement vector to change direction if leaving screen
 
-		if (xpos <= -7.2) {
+		if (xPos <= -7.2) {
 			angle = new Vector2 (1, 0);
 		}
-		if (xpos >= 7.2) {
+		if (xPos >= 7.2) {
 			angle = new Vector2 (-1, 0);
 		}
-		if (ypos <= -3) {
+		if (yPos <= -3) {
 			angle = new Vector2 (0, 0.5f);
 		}
 
-		if (ypos >= 3) {
+		if (yPos >= 3) {
 			angle = new Vector2 (0, -0.5f);
 		}
 
