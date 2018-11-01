@@ -289,7 +289,6 @@ GameObject:
   m_Component:
   - component: {fileID: 601551485}
   - component: {fileID: 601551486}
-  - component: {fileID: 601551487}
   - component: {fileID: 601551488}
   - component: {fileID: 601551490}
   - component: {fileID: 601551489}
@@ -359,17 +358,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &601551487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 601551484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a643b19c53da557458a99d371572152f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &601551488
 Rigidbody2D:
   serializedVersion: 4
@@ -587,7 +575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
-  score_Value: 0
+  scoreValue: 0
   hit: 0
   stringToEdit: ' '
   timerText: {fileID: 0}
@@ -640,7 +628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
-  score_Value: 0
+  scoreValue: 0
   hit: 0
   enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 6
@@ -661,7 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
-  score_Value: 0
+  scoreValue: 0
   hit: 0
   enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 6
@@ -682,7 +670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
-  score_Value: 0
+  scoreValue: 0
   hit: 0
   enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 5
@@ -702,7 +690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0}
-  score_Value: 0
+  scoreValue: 0
   hit: 0
   enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   spawnTime: 5
