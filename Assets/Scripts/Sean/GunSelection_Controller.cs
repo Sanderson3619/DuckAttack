@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GunSelection_Controller : MonoBehaviour
 {
-    public static int GunNumber;
+    public static int s_GunNumber;
     // Use this for initialization
     void Start()
     {
@@ -20,16 +20,16 @@ public class GunSelection_Controller : MonoBehaviour
     }
 
     //Using this to get gunNumber: Added by Abhilash
-    public int getGunNumber()
+    public int m_GetGunNumber()
     {
-        return GunNumber;
+        return s_GunNumber;
     }
 
     // The user selects Gun #1
     public void Gun1Selected()
     {
         // Store that they chose Gun #1
-        GunNumber = 1;
+        s_GunNumber = 1;
         // Go to the main game
         SceneManager.LoadScene("SceneSelection");
     }
@@ -38,7 +38,7 @@ public class GunSelection_Controller : MonoBehaviour
     public void Gun2Selected()
     {
         // Store that they chose Gun #2
-        GunNumber = 2;
+        s_GunNumber = 2;
         // Go to the main game
         SceneManager.LoadScene("SceneSelection");
     }
@@ -47,7 +47,7 @@ public class GunSelection_Controller : MonoBehaviour
     public void Gun3Selected()
     {
         // Store that they chose Gun #3
-        GunNumber = 3;
+        s_GunNumber = 3;
         // Go to the main game
         SceneManager.LoadScene("SceneSelection");
     }
@@ -56,7 +56,7 @@ public class GunSelection_Controller : MonoBehaviour
     public void CheaterCheaterPumpkinEater()
     {
         // Store that the user wants to be a cheater and use Gun #4
-        GunNumber = 4;
+        s_GunNumber = 4;
         // Go to the main game
         SceneManager.LoadScene("SceneSelection");
     }
