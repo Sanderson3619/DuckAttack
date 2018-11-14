@@ -8,7 +8,7 @@ public class Menu_Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+ //       audio.PlayOneShot("Wanderlust");
     }
 	
 	// Update is called once per frame
@@ -21,7 +21,6 @@ public class Menu_Controller : MonoBehaviour {
     {
         // Go to the main game
         SceneManager.LoadScene("GunSelection");
-
     }
 
     // The user clicks the Quit Game button
@@ -48,7 +47,14 @@ public class Menu_Controller : MonoBehaviour {
     // The user clicks on the Demo game button
     public void DemoMode()
     {
-        // Go to the Demo Mode Screen screen
+        // Go to the Demo Mode screen
         SceneManager.LoadScene("DemoMode");
+    }
+
+    // The user clicks on the Replay game button (on Game Over screen)
+    public void ReplayGame()
+    {
+        // Go to the Start Menu screen
+        SceneManager.LoadScene("StartMenu");
     }
 }
