@@ -173,7 +173,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &282168875
 Prefab:
@@ -212,7 +212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4917812269633708, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
       propertyPath: m_Name
@@ -222,6 +222,46 @@ Prefab:
     - {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &294523414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 294523416}
+  - component: {fileID: 294523415}
+  m_Layer: 0
+  m_Name: PauseBackgroundAudioFromSean
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &294523415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294523414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32903a22d1cdd3c4da4a067629d15e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &294523416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294523414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.4624174, y: 0.6803291, z: -0.044921875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +369,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &601551486
 SpriteRenderer:
@@ -503,9 +543,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30755ee1410ff0643a52ef66da30d0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySprite1: {fileID: 21300000, guid: e56f58d5311c8be4ca84488dc175c281, type: 3}
-  mySprite2: {fileID: 21300000, guid: 986dde6b5c77b9f4885df451a190f5f9, type: 3}
-  mySprite3: {fileID: 21300000, guid: 2c7800ef778ee3342a53bf94ed8ff47f, type: 3}
+  m_MySprite1: {fileID: 0}
+  m_MySprite2: {fileID: 0}
+  m_MySprite3: {fileID: 0}
 --- !u!1 &814482569
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +620,7 @@ Transform:
   m_LocalScale: {x: 1.912446, y: 1.1109983, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &814482572
 MonoBehaviour:
@@ -629,7 +669,7 @@ Transform:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &884234352
 MonoBehaviour:
@@ -732,7 +772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4917812269633708, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
@@ -839,5 +879,5 @@ Transform:
   m_LocalScale: {x: 0.47347414, y: 0.2896042, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
