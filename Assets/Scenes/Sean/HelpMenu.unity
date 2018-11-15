@@ -113,75 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &49482948
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 49482949}
-  - component: {fileID: 49482951}
-  - component: {fileID: 49482950}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &49482949
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 49482948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 283742972}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 0}
-  m_SizeDelta: {x: 1124, y: 513}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &49482950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 49482948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bed4946f5b03cb04790f4301550be6cd, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &49482951
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 49482948}
-  m_CullTransparentMesh: 0
 --- !u!1 &283742967
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +210,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 90}
   m_LocalScale: {x: 0.019493178, y: 0.019493178, z: 0.019493178}
   m_Children:
-  - {fileID: 49482949}
+  - {fileID: 780239670}
   - {fileID: 559006263}
   - {fileID: 870172343}
   - {fileID: 1870630789}
@@ -348,7 +279,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -359,19 +290,24 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum
-    bibendum dolor quis iaculis. Praesent in pulvinar ligula, sed viverra ipsum. Duis
-    et sapien placerat, tempor sem sed, hendrerit sapien. Pellentesque vitae diam
-    quis metus pellentesque mattis. Maecenas nec risus nec dui rutrum eleifend ac
-    vitae ex. Duis accumsan enim id dignissim hendrerit. Cras at nunc justo. Nam bibendum
-    bibendum odio malesuada hendrerit. Praesent egestas elit magna, pellentesque euismod
-    augue aliquet non. Aenean convallis tempor quam ut porta.\r\n\r\nUt sagittis libero
-    sed sodales porta. Etiam cursus pharetra efficitur. Sed pulvinar purus consectetur
-    felis euismod, sed volutpat metus tristique. Aenean placerat diam justo, nec tristique
-    felis sagittis sit amet. Cras facilisis augue eget accumsan consectetur. Vestibulum
-    eu finibus augue. Nulla rhoncus nibh quis ipsum tincidunt eleifend. Praesent at
-    tincidunt lectus. Nulla elementum, massa quis fermentum convallis, massa nunc
-    posuere nulla, ac scelerisque sapien tortor vel mauris. "
+  m_Text: "Playing the game is fairly simple. From the main menu, you will have a
+    few different buttons to change settings and see different features of our game.
+    Once you finish exploring, you can click on \u201CStart Game.\u201D\r\n\tAfter
+    clicking on start game, you will be brought to a menu which allows you to pick
+    one of four available guns and scopes that we have to offer\u2013an AR15, a shotgun,
+    a Scar-L, and a \u201Ccheater\u201D gun. Each of these guns plays slightly different
+    with their bullet spread and their difficulty will be different with each gun
+    as a result. \r\n\tOnce you select a gun, you will be presented with a new menu
+    that allows you to choose which level you would like to play. Each level has its
+    own unique properties and enemies, but we recommend starting with Level 1 and
+    replaying after completion to test each level!\r\n\tRegardless of which level
+    you choose, the main premise of the game is simple. You are a hunter attempting
+    to rid the enemies with your chosen gun. You must kill all enemies that spawn
+    within a given time limit. If you fail to kill all the enemies within the time
+    limit, you will be presented with a game over failure screen. If you succeed in
+    killing all the enemies with the time limit, you will be victorious! Both screens
+    will allow you to either quit the game or replay. Try all the levels and see which
+    one is your favorite!\r\n"
 --- !u!222 &422517933
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -390,7 +326,7 @@ GameObject:
   - component: {fileID: 559006265}
   - component: {fileID: 559006264}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Green Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -426,7 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3019608, g: 0.9607844, b: 0, a: 1}
+  m_Color: {r: 0.36217263, g: 0.735849, b: 0.19090424, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -447,6 +383,75 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 559006262}
+  m_CullTransparentMesh: 0
+--- !u!1 &780239669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 780239670}
+  - component: {fileID: 780239672}
+  - component: {fileID: 780239671}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &780239670
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780239669}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6441649, y: 1.6441649, z: 1.6441649}
+  m_Children: []
+  m_Father: {fileID: 283742972}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000050178638, y: 0}
+  m_SizeDelta: {x: 706, y: 312}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &780239671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780239669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: bed4946f5b03cb04790f4301550be6cd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &780239672
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780239669}
   m_CullTransparentMesh: 0
 --- !u!1 &870172342
 GameObject:
@@ -838,7 +843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3019608, g: 0.9607844, b: 0, a: 1}
+  m_Color: {r: 0.36078432, g: 0.73333335, b: 0.18823531, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

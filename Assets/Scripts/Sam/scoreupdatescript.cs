@@ -14,7 +14,6 @@ public class scoreupdatescript : Interaction
 
     void Start()
     {
-      
         timer = GetComponent<Text>();
         if (timer)
         {
