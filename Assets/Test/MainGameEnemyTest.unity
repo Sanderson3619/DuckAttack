@@ -641,7 +641,7 @@ MonoBehaviour:
   scoreValue: 0
   hit: 0
   enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
-  spawnTimeTest: 5
+  spawnTimeTest: 0.2
   spawnPointstest:
   - {fileID: 903200834}
   - {fileID: 1775803815}
@@ -663,7 +663,7 @@ MonoBehaviour:
   scoreValue: 0
   hit: 0
   enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
-  spawnTimeTest: 5
+  spawnTimeTest: 0.2
   spawnPointstest:
   - {fileID: 903200834}
   - {fileID: 1775803815}
