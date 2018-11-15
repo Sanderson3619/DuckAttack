@@ -1,13 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyManager : Duck_Movement {
 
 	// Prefab of the enemy, we use this in instantiate method to spawn the enemy.
 	public GameObject enemy;
-	// Float variable declared to wait until the time to spawn the next ducks.
-	public float spawnTime = 5f;
 	// These are the points where the ducks spawn in unity engine. 
 	public Transform[] spawnPoints;
 	// This is the variable that acts as the Duck_Movement script. 
@@ -22,7 +18,8 @@ public class EnemyManager : Duck_Movement {
 		// This calls the Duck_Movement script to the variable duck.
 		duck = GetComponent<Duck_Movement>();
 		// Invokes the spawn method after 0.1f second.
-		Invoke("spawn", 0.1f);        
+		Invoke("spawn", 0.1f);
+		InvokeRepeating("nextSpawn", 0.1f, 1.5f);	
 	}
 
 	// Update is called once per frame
@@ -46,15 +43,26 @@ public class EnemyManager : Duck_Movement {
 			// Make sure to spawn less than 10 ducks startinf from 0. 
 			if(maxDucks < 10)
 			{
-			// Instantiate the enemy with the prefab attached to it.
-			Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
-			// Increments the number of ducks after spawned.
-			noOfDucks++;	
-			// Increments the maximum number of ducks after spawned.
-			maxDucks++;
+				// Instantiate the enemy with the prefab attached to it.
+				Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+				// Duck_Movement.spawnTime = 0;
+				// Increments the number of ducks after spawned.
+				noOfDucks++;	
+				// Increments the maximum number of ducks after spawned.
+				maxDucks++;
 			} 			
 		}
 		
+	}
+
+	void nextSpawn()
+	{
+		Duck_Movement.spawnTime += 1;
+		if((Duck_Movement.spawnTime/4) >= 20f)
+		{
+			Duck_Movement.spawnTime = 0f;
+		}
+		UnityEngine.Debug.Log("Time : " + Duck_Movement.spawnTime/4);
 	}
 
 }

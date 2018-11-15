@@ -16,6 +16,8 @@ public class Duck_Movement : MonoBehaviour
     public bool hit = false;
     // Static bool variable declared to check whether the duck is dead or alive. 
     public static bool isDead = false;
+    // Float variable declared to wait until the time to spawn the next ducks.
+	public static float spawnTime = 0;
 
     // Use this for initialization
     void Start()

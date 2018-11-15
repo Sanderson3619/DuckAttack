@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyTestScript : Duck_Movement {
 
 	public GameObject enemy;
-	public float spawnTime = 5f;
+	public float spawnTimeTest = 5f;
 	public Transform[] spawnPointstest;
 	public Duck_Movement duck;
 	public static int noofDucks = 0;
@@ -14,7 +14,7 @@ public class EnemyTestScript : Duck_Movement {
 	void Start()
 	{
 		duck = GetComponent<Duck_Movement>();
-		InvokeRepeating("Spawn", 0.1f, spawnTime);        
+		InvokeRepeating("Spawn", 0.1f, spawnTimeTest);        
 	}
 
 	// Update is called once per frame
