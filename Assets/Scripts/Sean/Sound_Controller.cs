@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Audio;
 public class Sound_Controller : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public AudioMixer s_AudioMixer;
+
+    public void SetVolume (float volume)
+    {
+        s_AudioMixer.SetFloat("volume", volume);
+    }
 
     public void BackButton ()
     {
