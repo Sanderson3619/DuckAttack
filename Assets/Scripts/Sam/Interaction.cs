@@ -11,7 +11,6 @@ public class Interaction : Duck_Movement
 
     // Use this for initialization
     void Start () {
-        
         instruction = GetComponent<Text>();
         if (instruction)
         {

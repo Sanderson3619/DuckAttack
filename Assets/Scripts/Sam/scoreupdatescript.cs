@@ -33,6 +33,7 @@ public class scoreupdatescript : Interaction
         if (score == 10)
         {
             StartCoroutine(ExecuteAfterTime());
+            score = 0;
         }
 
         if (currentTime == 0)
