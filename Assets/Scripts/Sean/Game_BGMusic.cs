@@ -9,12 +9,12 @@ public class Game_BGMusic : MonoBehaviour
     void Start() {
 
     }
-
-    private static Game_BGMusic instance = null;
-    public static Game_BGMusic Instance {
-        get { return instance; }
-    }
-
+    /*
+        private static Game_BGMusic instance = null;
+        public static Game_BGMusic Instance {
+            get { return instance; }
+        }
+   
 
     void Awake()
     {
@@ -29,6 +29,29 @@ public class Game_BGMusic : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }
+
+*/
+
+        private static Game_BGMusic saSingletonPattern;
+        public static Game_BGMusic Instance
+        {
+            get { return saSingletonPattern; }
+        }
+
+        void Awake()
+        {
+            if (saSingletonPattern != null && saSingletonPattern != this)
+            {
+                Destroy(this.gameObject);
+                return;
+            }
+            else
+            {
+                saSingletonPattern = this;
+            }
+            DontDestroyOnLoad(this.gameObject);
+        }
+    
 
     void Update()
     {
