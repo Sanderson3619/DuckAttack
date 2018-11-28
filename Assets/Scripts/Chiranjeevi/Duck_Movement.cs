@@ -11,13 +11,13 @@ public class Duck_Movement : MonoBehaviour
     // Float variable declared to chnage the direction of the ducks when they reached the boundaries.
     private float positionY= 1;
     // Integer variabe declared to update the score value each time they shot by the user. 
-    public int scoreValue = 0;
+    public int scoreValue = 1;
     // Bool variable declared to check whether the enemy is hit or not.
     public bool hit = false;
     // Static bool variable declared to check whether the duck is dead or alive. 
     public static bool isDead = false;
     // Float variable declared to wait until the time to spawn the next ducks.
-	public static float spawnTime = 0;
+	// public static float spawnTime = 0;
 
     // Use this for initialization
     void Start()

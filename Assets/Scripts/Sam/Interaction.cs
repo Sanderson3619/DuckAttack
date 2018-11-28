@@ -8,10 +8,12 @@ public class Interaction : Duck_Movement
     Text instruction;
     public static int score = 0;
     public string stringToEdit = " ";
+    private Duck_Movement duckScore;
 
     // Use this for initialization
     void Start () {
         instruction = GetComponent<Text>();
+        duckScore = GetComponent<Duck_Movement>();
         if (instruction)
         {
             instruction.text = "Score: 0";
@@ -23,7 +25,8 @@ public class Interaction : Duck_Movement
     {
         if (hit == true)
         {
-            score = score + 1;
+            score = score + duckScore.scoreValue;
+            Duck_Movement.isDead = true;
         }
         
     }
@@ -53,7 +56,6 @@ public class Interaction : Duck_Movement
             gameObject.SetActive(false);
             CancelInvoke();
             hit = true;
-            Duck_Movement.isDead = true;
         }
 
         Update_score(hit);
