@@ -54,7 +54,8 @@ public class Menu_Controller : MonoBehaviour {
     // The user clicks on the Replay game button (on Game Over screen)
     public void ReplayGame()
     {
-        // Go to the Start Menu screen
+        // Go to the Start Menu screen 
         SceneManager.LoadScene("StartMenu");
+
     }
 }
