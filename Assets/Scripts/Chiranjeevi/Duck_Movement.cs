@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Duck_Movement : MonoBehaviour
+public class Duck_Movement : GunSelection_Controller
 {
+
+    //Abhi's Part of cheat mode
+    GunSelection_Controller m_Test;
+    public static int m_Gun = 1;
+
     // Two dimensional vector variable to store the position of the enemy. 
     public Vector2 position;
     // Float variable declared to chnage the direction of the ducks when they reached the boundaries. 
@@ -22,10 +27,22 @@ public class Duck_Movement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
+        //Abhi's Part
+        m_Test = GetComponent<GunSelection_Controller>();
+        m_Gun = m_Test.m_GetGunNumber();
+
         // Invokes DuckMovement repeatedly until the duck is dead or shot.
         InvokeRepeating("duckMovement", 0.5f, 0.3f);
     }
 
+
+    //Abhi's function
+    public int getGunCheat()
+    {
+        Debug.Log("Gun in code: " + m_Gun);
+        return m_Gun;
+    }
     // Movement of the duck is declared here.
     public void duckMovement()
     {
