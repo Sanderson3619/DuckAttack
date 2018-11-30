@@ -7,17 +7,6 @@ using UnityEngine.SceneManagement;
 public class GunSelection_Controller : MonoBehaviour
 {
     public static int s_GunNumber;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     //Using this to get gunNumber: Added by Abhilash
     public int m_GetGunNumber()

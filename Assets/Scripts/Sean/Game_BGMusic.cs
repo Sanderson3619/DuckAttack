@@ -4,34 +4,7 @@ using UnityEngine;
 
 public class Game_BGMusic : MonoBehaviour
 {
-
-    // Use this for initialization
-    void Start() {
-
-    }
-    /*
-        private static Game_BGMusic instance = null;
-        public static Game_BGMusic Instance {
-            get { return instance; }
-        }
-   
-
-    void Awake()
-    {
-        if (instance != null && instance != this)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-        else
-        {
-            instance = this;
-        }
-        DontDestroyOnLoad(this.gameObject);
-    }
-
-*/
-
+        // Creating a singleton class for the background music
         private static Game_BGMusic saSingletonPattern;
         public static Game_BGMusic Instance
         {
@@ -40,22 +13,20 @@ public class Game_BGMusic : MonoBehaviour
 
         void Awake()
         {
+            // Check for an existing instance
             if (saSingletonPattern != null && saSingletonPattern != this)
             {
+                // If instance exists, destroy self
                 Destroy(this.gameObject);
                 return;
             }
             else
             {
+                // If instance does not exist, store this one as an instance
                 saSingletonPattern = this;
             }
+            // Persist through menu changes
             DontDestroyOnLoad(this.gameObject);
         }
-    
-
-    void Update()
-    {
-        
-    }
 }
 // https://answers.unity.com/questions/11314/audio-or-music-to-continue-playing-between-scene-c.html

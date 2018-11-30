@@ -6,17 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class HelpMenu : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
     public void BackToMainMenu()
     {
         // Go to the help screen

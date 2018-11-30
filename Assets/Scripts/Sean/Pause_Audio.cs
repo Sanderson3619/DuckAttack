@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class Pause_Audio : MonoBehaviour {
 
-	// Use this for initialization
+	// Pauses audio when this gets loaded
 	void Start () {
         Game_BGMusic.Instance.gameObject.GetComponent<AudioSource>().Pause();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }
