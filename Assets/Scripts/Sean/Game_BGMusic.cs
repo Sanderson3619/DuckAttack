@@ -26,8 +26,7 @@ public class Game_BGMusic : MonoBehaviour
                 // If instance does not exist, store this one as an instance
                 saSingletonPattern = this;
             }
-            // Persist through menu changes
+            // Persist through scene changes
             DontDestroyOnLoad(this.gameObject);
         }
 }
-// https://answers.unity.com/questions/11314/audio-or-music-to-continue-playing-between-scene-c.html

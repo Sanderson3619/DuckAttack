@@ -59,25 +59,65 @@ public class Menu_Controller : MonoBehaviour {
 
     }
 
-    /*
-    MenuButton Button1 = new MenuButton();
-    MenuButton Button2 = (MenuButton)Button1.Clone();
-    public abstract class Buttons
+
+    /* The following code is for demonstrating a Prototype
+     * pattern. It does not do anything meaningful in the code.
+     * It outputs some logs in the debug console when the play
+     * button is hit, but that is all.
+     */
+    private void Start()
     {
-        public abstract Buttons Clone();
+        SimpleDemonstration Demonstration1 = new SimpleDemonstration();
+        SimpleDemonstration Demonstration2 = (SimpleDemonstration)Demonstration1.Clone();
+        Demonstration2.Display();
+        SimpleDemonstration Demonstration3 = (SimpleDemonstration)Demonstration1.Clone();
+        Demonstration3.Display();
+        SimpleDemonstration Demonstration4 = (SimpleDemonstration)Demonstration1.Clone();
+        Demonstration4.Display();
     }
 
-    public class MenuButton : Buttons
+    public abstract class sa_PrototypePattern
     {
-        public MenuButton()
-        {
-            SceneManager.LoadScene("StartMenu");
-        }
-        public override Buttons Clone()
-        {
-            return (Buttons)this.MemberwiseClone();
-        }
-            
+        public sa_PrototypePattern() {}
+        public abstract sa_PrototypePattern Clone();
     }
-    */
+
+    public class SimpleDemonstration : sa_PrototypePattern
+    {
+        public SimpleDemonstration() {}
+        public override sa_PrototypePattern Clone()
+            {
+                return (sa_PrototypePattern)this.MemberwiseClone();
+            }
+
+        public void Display()
+            {
+                Debug.Log("This demonstration has worked!");
+            }    
+    }
 }
+
+/* EXTRA STUFF - IGNORE
+ *  MenuButton Button1 = new MenuButton("Prototype Pattern");
+ *  
+ *  
+ *  
+ *  private string sa_string = "Prototype Pattern";
+ *  public Buttons(string sa_string2)
+ *  {
+ *         this.sa_string2 = sa_string; 
+ *      }
+ * 
+ *    public string sa_string2
+ *     {
+ *       get { return sa_string; }
+ *       set { sa_string = value; }
+ *     }
+ *  
+ *  
+ *  
+ *  public MenuButton(string sa_string) : base(sa_string)
+ *     {
+ *  
+ *     }
+ */
