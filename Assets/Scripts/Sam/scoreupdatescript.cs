@@ -30,10 +30,10 @@ public class scoreupdatescript : Interaction
 
         stringToEdit = GUI.TextField(new Rect(30, 20, 200, 50), "SCORE: " + score.ToString(), fontStyle);
 
-        if (score == 25)
+        // Sean - changed == to >=, from 25 to 20. New green and red ducks make == difficult to achieve.
+        if (score >= 20)
         {
             StartCoroutine(ExecuteAfterTime());
-            score = 0;
         }
 
         if (currentTime == 0)
@@ -53,8 +53,8 @@ public class scoreupdatescript : Interaction
         //Abhilash is making this change below
         Cursor.visible = true;
        
-
-        SceneManager.LoadScene("Completed Menu");
+        // Added by Sean - they won, go to win screen
+        SceneManager.LoadScene("Victory Menu");
 
     }
 
@@ -68,7 +68,8 @@ public class scoreupdatescript : Interaction
         }
         yield return new WaitForSeconds(step);
         Cursor.visible = true;
-        SceneManager.LoadScene("Completed Menu");
+        // Added by Sean - they lost, go to defeat
+        SceneManager.LoadScene("Defeat Menu");
 
     }
 

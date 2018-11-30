@@ -44,7 +44,7 @@ public class EnemyManager : Duck_Movement {
 		// Uses this variable and calls the random function to spawn the enemies at random positions.
 		int spawnPointIndex = Random.Range(0, spawnPoints.Length);
 		{
-			// Make sure to spawn less than 10 ducks startinf from 0. 
+			// Make sure to spawn less than 10 ducks starting from 0. 
 			if(maxDucks < 15  && noOfDucks <= 2)
 			{
 				// Instantiate the enemy with the prefab attached to it.

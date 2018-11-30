@@ -5,16 +5,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu_Controller : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
- //       audio.PlayOneShot("Wanderlust");
+    // for dynamic binding purposes
+    public virtual void MainButton()
+    {
+        SceneManager.LoadScene("StartMenu");
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // for static binding purposes
+    public void MainButton2()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
 
     // The user clicks the Start Game button
     public void StartGame ()
@@ -26,7 +26,7 @@ public class Menu_Controller : MonoBehaviour {
     // The user clicks the Quit Game button
     public void QuitGame()
     {
-        // Exit the unity.exe, does not work in the Unity Engine
+        // Exit the built unity.exe, does not work in the Unity Engine
         Application.Quit();
     }
 
@@ -58,4 +58,26 @@ public class Menu_Controller : MonoBehaviour {
         SceneManager.LoadScene("StartMenu");
 
     }
+
+    /*
+    MenuButton Button1 = new MenuButton();
+    MenuButton Button2 = (MenuButton)Button1.Clone();
+    public abstract class Buttons
+    {
+        public abstract Buttons Clone();
+    }
+
+    public class MenuButton : Buttons
+    {
+        public MenuButton()
+        {
+            SceneManager.LoadScene("StartMenu");
+        }
+        public override Buttons Clone()
+        {
+            return (Buttons)this.MemberwiseClone();
+        }
+            
+    }
+    */
 }
