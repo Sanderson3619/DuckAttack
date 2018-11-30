@@ -34,13 +34,16 @@ public class Player_Interaction : GunSelection_Controller
         if (this.m_Gun == 1)
         {
             m_SpriteRenderer.sprite = m_MySprite1;
+            this.m_SpriteRenderer.transform.localScale -= new Vector3(0.01f, 0.01f, 0f);
         } else if(this.m_Gun == 2)
         {
             m_SpriteRenderer.sprite = m_MySprite2;
+            this.m_SpriteRenderer.transform.localScale += new Vector3(0.03f, 0.03f, 0f);
         }
         else
         {
             m_SpriteRenderer.sprite = m_MySprite3;
+            this.m_SpriteRenderer.transform.localScale += new Vector3(0.04f, 0.04f, 0f);
         } 
 
         /*
