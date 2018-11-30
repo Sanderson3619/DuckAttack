@@ -13,6 +13,6 @@ public class GameOverScreens : scoreupdatescript
         fontStyle.fontSize = 32;
         fontStyle.normal.textColor = Color.white;
 
-        stringToEdit = GUI.TextField(new Rect(Screen.width/5, 0, 2000, 50), "<b>You had a score of </b>" + score.ToString() + "<b>! You needed 20 to win.</b>", fontStyle);
+        stringToEdit = GUI.TextField(new Rect((Screen.width/2)-350, 0, 700, 50), "<b>You had a score of </b>" + score.ToString() + "<b>! You needed 20 to win.</b>", fontStyle);
     }
 }
