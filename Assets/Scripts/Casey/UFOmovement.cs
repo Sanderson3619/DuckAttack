@@ -14,6 +14,7 @@ public class UFOmovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Physics2D.IgnoreLayerCollision (8, 8, true);
 		Vector2 angle = new Vector2 (-1, 0.5f);
 		//initial movement vector
 		GetComponent<Rigidbody2D> ().velocity = angle * speed;
