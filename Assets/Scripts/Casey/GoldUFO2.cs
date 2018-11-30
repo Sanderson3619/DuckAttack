@@ -14,7 +14,6 @@ using UnityEngine;
 public class GoldUFO2 : MonoBehaviour {
 
 	GoldUFOEnemy ufo = GoldUFOEnemy.getInstance();
-	GoldUFOEnemy ufoDyanmic = new UFOEnemy();
 
 	// Use this for initialization
 	void Start () {
