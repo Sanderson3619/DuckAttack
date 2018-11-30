@@ -1,9 +1,10 @@
-﻿using System.Collections;
+﻿// Sean Anderson
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
-public class Sound_Controller : MonoBehaviour {
+public class Sound_Controller : Menu_Controller {
 
     public AudioMixer s_AudioMixer;
 
@@ -14,7 +15,7 @@ public class Sound_Controller : MonoBehaviour {
 
     public void BackButton ()
     {
-        SceneManager.LoadScene("StartMenu");
+        MainButton2();
     }
 
 }
