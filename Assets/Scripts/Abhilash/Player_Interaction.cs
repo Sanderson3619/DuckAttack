@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Interaction : GunSelection_Controller
 {
@@ -16,6 +17,8 @@ public class Player_Interaction : GunSelection_Controller
     private SpriteRenderer m_SpriteRenderer;
     // Holds the required gun png sprite.
     private int m_Gun = 1;
+    public static int numBullets = 0;
+    public string stringToEdit = "";
     // Choice of gun.
 
     // Use this for initialization.
@@ -35,16 +38,24 @@ public class Player_Interaction : GunSelection_Controller
         {
             m_SpriteRenderer.sprite = m_MySprite1;
             this.m_SpriteRenderer.transform.localScale -= new Vector3(0.01f, 0.01f, 0f);
+            numBullets = 30;
         } else if(this.m_Gun == 2)
         {
             m_SpriteRenderer.sprite = m_MySprite2;
             this.m_SpriteRenderer.transform.localScale += new Vector3(0.03f, 0.03f, 0f);
+            numBullets = 45;
+        } else if(this.m_Gun == 3)
+        {
+            m_SpriteRenderer.sprite = m_MySprite3;
+            this.m_SpriteRenderer.transform.localScale += new Vector3(0.04f, 0.04f, 0f);
+            numBullets = 60;
         }
         else
         {
             m_SpriteRenderer.sprite = m_MySprite3;
-            this.m_SpriteRenderer.transform.localScale += new Vector3(0.04f, 0.04f, 0f);
-        } 
+            this.m_SpriteRenderer.transform.localScale += new Vector3(0.9f, 0.9f, 0f);
+            numBullets = 500;
+        }
 
         /*
         Vector2 point = new Vector2();
@@ -65,13 +76,36 @@ public class Player_Interaction : GunSelection_Controller
         // Debug.Log(newPos);
         if (Input.GetMouseButtonDown(0) == true)
         {
+            numBullets--;
             m_GunSound.Play();
-            this.m_SpriteRenderer.transform.localScale += new Vector3(0.02f, 0.02f, 0f);
+            this.m_SpriteRenderer.transform.localScale -= new Vector3(0.05f, 0.05f, 0f);
             // Should figure out a way to put some delay here.
+            StartCoroutine(ExecuteAfterTime(0.05f));
             // The delay should merely pass time by doing something else, but not pause the processing.
-            this.m_SpriteRenderer.transform.localScale -= new Vector3(0.02f, 0.02f, 0f);
+            //this.m_SpriteRenderer.transform.localScale -= new Vector3(0.1f, 0.1f, 0f);
 
+            if(numBullets == 0)
+            {
+                Cursor.visible = true;
+                SceneManager.LoadScene("Defeat Menu");
+            }
         }
+    }
+
+    void OnGUI()
+    {
+        GUIStyle fontStyle = new GUIStyle(GUI.skin.GetStyle("label"));
+        fontStyle.fontSize = 24;
+
+        stringToEdit = GUI.TextField(new Rect(250, 20, 200, 50), "Bullets Left: " + numBullets.ToString(), fontStyle);
+
+    }
+
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        this.m_SpriteRenderer.transform.localScale += new Vector3(0.05f, 0.05f, 0f);
     }
 
 }

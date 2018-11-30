@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class EnemyManager : Duck_Movement {
+public class EnemyManager : Duck_Movement
+{
 
 	// Prefab of the enemy, we use this in instantiate method to spawn the enemy.
 	public GameObject enemy;
@@ -14,47 +15,85 @@ public class EnemyManager : Duck_Movement {
 	public static int noOfDucks = 0;
 	// Variable to check the maximum number of ducks spawned.
 	public static int maxDucks = 0;
+
+    private int cheatMode = 1;
 	
 	void Start()
 	{
 		// This calls the Duck_Movement script to the variable duck.
 		duck = GetComponent<Duck_Movement>();
-		// Invokes the spawn method after 0.1f second.
-		Invoke("spawn", 0.1f);
+
+        //Abhi's code
+        cheatMode = duck.m_GetGunNumber();
+        Debug.Log("Gun in Chiru: " + cheatMode);
+
+        // Invokes the spawn method after 0.1f second.
+        Invoke("spawn", 0.1f);
 		//InvokeRepeating("RedduckSpawn", 5f, 5f);
 		//InvokeRepeating("GreenduckSpawn", 3f, 4f);	
 	}
 
 	// Update is called once per frame
 	void Update () {
-		// Checks if the duck is dead or alive by calling the duckCheck method in the Duck_Movement script.
-		if(duck.duckCheck() == true)
-		{
-			// Invokes the spawn method after 0.1f second.
-			Invoke("spawn", 0.1f);
-			// Sets backs the duck status as alive after spawning the new enemy.
-			duck.setDuck(false);
-			noOfDucks--;
-		}	
+        // Checks if the duck is dead or alive by calling the duckCheck method in the Duck_Movement script.
+        if (cheatMode != 4)
+        {
+            if (duck.duckCheck() == true)
+            {
+                // Invokes the spawn method after 0.1f second.
+                Invoke("spawn", 0.1f);
+                // Sets backs the duck status as alive after spawning the new enemy.
+                duck.setDuck(false);
+                noOfDucks--;
+            }
+        }
+        else //Abhi's part
+        {
+            InvokeRepeating("spawn", 0.1f, 1);
+            if (duck.duckCheck() == true)
+            {
+                // Invokes the spawn method after 0.1f second.
+                Invoke("spawn", 0.1f);
+                // Sets backs the duck status as alive after spawning the new enemy.
+                duck.setDuck(false);
+                noOfDucks--;
+            }
+        }
 	}
-	
-	// This method spawns the enemy from the spawn points declared in unity.
-	void spawn()
+
+    // This method spawns the enemy from the spawn points declared in unity.
+    void spawn()
 	{	
 		// Uses this variable and calls the random function to spawn the enemies at random positions.
 		int spawnPointIndex = Random.Range(0, spawnPoints.Length);
-		{
-			// Make sure to spawn less than 10 ducks starting from 0. 
-			if(maxDucks < 15  && noOfDucks <= 2)
-			{
-				// Instantiate the enemy with the prefab attached to it.
-				Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
-				// Duck_Movement.spawnTime = 0;
-				// Increments the number of ducks after spawned.
-				noOfDucks++;
-				// Increments the maximum number of ducks after spawned.
-				maxDucks++;
-			} 			
+        {
+            // Make sure to spawn less than 10 ducks starting from 0. 
+            if (cheatMode != 4)
+            {
+                if (maxDucks < 15 && noOfDucks <= 2)
+                {
+                    // Instantiate the enemy with the prefab attached to it.
+                    Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+                    // Duck_Movement.spawnTime = 0;
+                    // Increments the number of ducks after spawned.
+                    noOfDucks++;
+                    // Increments the maximum number of ducks after spawned.
+                    maxDucks++;
+                }
+            }
+            else //Abhi's Part
+            {
+                if (maxDucks < 30 && noOfDucks <= 2)
+                {
+                    // Instantiate the enemy with the prefab attached to it.
+                    Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+                    // Duck_Movement.spawnTime = 0;
+                    // Increments the number of ducks after spawned.
+                    noOfDucks++;
+                    // Increments the maximum number of ducks after spawned.
+                    maxDucks++;
+                }
+            }
 		}
 		
 	}
