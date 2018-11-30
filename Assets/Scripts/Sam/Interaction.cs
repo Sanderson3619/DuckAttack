@@ -53,9 +53,9 @@ public class Interaction : Duck_Movement
 
         if (ips <= -3)
         {
-            gameObject.SetActive(false);
-            CancelInvoke();
-            hit = true;
+			gameObject.SetActive (false);
+			CancelInvoke ();
+			hit = true;
         }
 
         Update_score(hit);
