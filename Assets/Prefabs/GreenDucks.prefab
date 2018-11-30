@@ -328,9 +328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d424f35673a7a24b9a3268cd0fafd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0}
-  scoreValue: 1
-  hit: 0
+  m_Position: {x: 0, y: 0}
+  m_ScoreValue: 1
+  m_Hit: 0
   stringToEdit: ' '
 --- !u!114 &114887217315294086
 MonoBehaviour:
@@ -343,9 +343,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4bad3c36f90ba4f8f5f53dd65f8317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0}
-  scoreValue: 5
-  hit: 0
+  m_Position: {x: 0, y: 0}
+  m_ScoreValue: 5
+  m_Hit: 0
 --- !u!212 &212605935802424944
 SpriteRenderer:
   m_ObjectHideFlags: 1

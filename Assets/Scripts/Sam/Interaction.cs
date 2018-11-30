@@ -25,8 +25,8 @@ public class Interaction : Duck_Movement
     {
         if (hit == true)
         {
-            score = score + duckScore.scoreValue;
-            Duck_Movement.isDead = true;
+            score = score + duckScore.m_ScoreValue;
+            Duck_Movement.s_IsDead = true;
         }
         
     }
@@ -46,19 +46,19 @@ public class Interaction : Duck_Movement
 
     void DuckHit()
     {       
-        position = new Vector2(0, -1);
+        m_Position = new Vector2(0, -1);
         int ips = (int)GetComponent<Rigidbody2D>().transform.position.y;
 
-        GetComponent<Rigidbody2D>().transform.Translate(position);
+        GetComponent<Rigidbody2D>().transform.Translate(m_Position);
 
         if (ips <= -3)
         {
             gameObject.SetActive(false);
             CancelInvoke();
-            hit = true;
+            m_Hit = true;
         }
 
-        Update_score(hit);
+        Update_score(m_Hit);
     }
 
 

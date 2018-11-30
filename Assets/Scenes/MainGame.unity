@@ -169,10 +169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cede70ba50bda548b239d801d30c8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1312872600176922, guid: d78ced32ee2ab4a4fb1de6b406664b27, type: 2}
-  SpecialspawnPoints:
+  m_enemy: {fileID: 1312872600176922, guid: d78ced32ee2ab4a4fb1de6b406664b27, type: 2}
+  m_SpecialSpawnPoints:
   - {fileID: 993187834}
-  Spawntime: 6
+  m_SpawnTime: 8
+  m_Duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_CountDucks: {fileID: 884234353}
 --- !u!4 &54034044
 Transform:
   m_ObjectHideFlags: 0
@@ -199,10 +201,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cede70ba50bda548b239d801d30c8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1652459349442726, guid: 4126778886b50fe4196b48a50adbd281, type: 2}
-  SpecialspawnPoints:
+  m_enemy: {fileID: 1652459349442726, guid: 4126778886b50fe4196b48a50adbd281, type: 2}
+  m_SpecialSpawnPoints:
   - {fileID: 1697348659}
-  Spawntime: 10
+  m_SpawnTime: 12
+  m_Duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_CountDucks: {fileID: 884234353}
 --- !u!1 &277467020
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,9 +640,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05286c865943dd48bfd0190d149cf7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0}
-  scoreValue: 1
-  hit: 0
+  m_Position: {x: 0, y: 0}
+  m_ScoreValue: 1
+  m_Hit: 0
   stringToEdit: ' '
   timerText: {fileID: 0}
   TimerString: ' '
@@ -689,17 +693,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9808b8cdb15ea846bc5d1b44d8b2c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0}
-  scoreValue: 1
-  hit: 0
-  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
-  spawnPoints:
+  m_Position: {x: 0, y: 0}
+  m_ScoreValue: 1
+  m_Hit: 0
+  m_Enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_SpawnPoints:
   - {fileID: 1775803815}
-  - {fileID: 903200834}
+  - {fileID: 922705871}
   - {fileID: 51078951}
-  RedspawnPoints: []
-  GreenspawnPoints: []
-  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!114 &884234353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,17 +713,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9808b8cdb15ea846bc5d1b44d8b2c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0}
-  scoreValue: 1
-  hit: 0
-  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
-  spawnPoints:
+  m_Position: {x: 0, y: 0}
+  m_ScoreValue: 1
+  m_Hit: 0
+  m_Enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_SpawnPoints:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 922705871}
-  RedspawnPoints: []
-  GreenspawnPoints: []
-  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!114 &884234354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,17 +733,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9808b8cdb15ea846bc5d1b44d8b2c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0}
-  scoreValue: 1
-  hit: 0
-  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
-  spawnPoints:
+  m_Position: {x: 0, y: 0}
+  m_ScoreValue: 1
+  m_Hit: 0
+  m_Enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_SpawnPoints:
   - {fileID: 903200834}
-  - {fileID: 51078951}
   - {fileID: 922705871}
-  RedspawnPoints: []
-  GreenspawnPoints: []
-  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  - {fileID: 51078951}
+  m_duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!114 &884234355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,17 +753,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9808b8cdb15ea846bc5d1b44d8b2c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0}
-  scoreValue: 1
-  hit: 0
-  enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
-  spawnPoints:
-  - {fileID: 922705871}
+  m_Position: {x: 0, y: 0}
+  m_ScoreValue: 1
+  m_Hit: 0
+  m_Enemy: {fileID: 1770141413933372, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_SpawnPoints:
+  - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 51078951}
-  RedspawnPoints: []
-  GreenspawnPoints: []
-  duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
 --- !u!1 &903200833
 GameObject:
   m_ObjectHideFlags: 0
