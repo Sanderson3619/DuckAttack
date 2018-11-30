@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 54034045}
   - component: {fileID: 54034043}
   m_Layer: 0
-  m_Name: SpecialEnemy
+  m_Name: SpecialEnemyManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
