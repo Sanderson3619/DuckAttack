@@ -14,6 +14,7 @@ public class Enemy2Behavior : Enemy2Manager {
 
     // Use this for initialization
     void Start () {
+		Physics2D.IgnoreLayerCollision (8, 8, true);
         InvokeRepeating("Enemy2Movement", 0.5f, 0.3f);
     }
 
@@ -61,5 +62,8 @@ public class Enemy2Behavior : Enemy2Manager {
     // Update is called once per frame
     void Update () {
         transform.Translate(Vector3.forward * MoveSpeed * Time.deltaTime);
+
     }
+
+
 }

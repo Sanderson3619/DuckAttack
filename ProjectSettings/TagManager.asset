@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Duck
+  - enemy2
+  - UFO
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - UFO
   - 
   - 
   - 
@@ -41,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3407014417
     locked: 0
