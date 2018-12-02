@@ -553,6 +553,7 @@ MonoBehaviour:
   m_MySprite1: {fileID: 21300000, guid: e56f58d5311c8be4ca84488dc175c281, type: 3}
   m_MySprite2: {fileID: 21300000, guid: 986dde6b5c77b9f4885df451a190f5f9, type: 3}
   m_MySprite3: {fileID: 21300000, guid: 2c7800ef778ee3342a53bf94ed8ff47f, type: 3}
+  stringToEdit: 
 --- !u!1 &814482569
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +702,7 @@ MonoBehaviour:
   - {fileID: 1775803815}
   - {fileID: 922705871}
   - {fileID: 51078951}
-  m_duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_Duck: {fileID: 0}
 --- !u!114 &884234353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,7 +722,7 @@ MonoBehaviour:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 922705871}
-  m_duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_Duck: {fileID: 0}
 --- !u!114 &884234354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,7 +742,7 @@ MonoBehaviour:
   - {fileID: 903200834}
   - {fileID: 922705871}
   - {fileID: 51078951}
-  m_duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_Duck: {fileID: 0}
 --- !u!114 &884234355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,7 +762,7 @@ MonoBehaviour:
   - {fileID: 903200834}
   - {fileID: 1775803815}
   - {fileID: 51078951}
-  m_duck: {fileID: 114549203257196338, guid: d70b69405117dfe4f97bdcf49e25418a, type: 2}
+  m_Duck: {fileID: 0}
 --- !u!1 &903200833
 GameObject:
   m_ObjectHideFlags: 0
