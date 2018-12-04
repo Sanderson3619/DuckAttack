@@ -11,7 +11,8 @@ public class Game_BGMusic : MonoBehaviour
         {
             get { return saSingletonPattern; }
         }
-
+        // Awake is built in to unity to initialize any variables of game states
+        // before the game starts. 
         void Awake()
         {
             // Check for an existing instance
