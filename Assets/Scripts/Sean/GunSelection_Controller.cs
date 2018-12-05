@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GunSelection_Controller : MonoBehaviour
 {
-    private static int s_GunNumber;
+    public static int s_GunNumber;
 
     //Using this to get gunNumber: Added by Abhilash
     public int m_GetGunNumber()
